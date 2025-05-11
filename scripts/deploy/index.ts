@@ -457,6 +457,7 @@ const main = async () => {
     deployCleanupWorker();
 
     console.log("🎉 Deployment completed successfully");
+    console.log(`🌐 Your WhisperMail app is deployed at: ${CUSTOM_DOMAIN || `https://${PROJECT_NAME}.pages.dev`}`);
   } catch (error) {
     console.error("❌ Deployment failed:", error);
     process.exit(1);
